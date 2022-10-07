@@ -23,6 +23,7 @@ const internalData: any[] = [
 ];
 
 export class GarbageFactory {
+  // This constructor is equivalent to `this.callback = callback;`
   constructor(private readonly callback: (value: any) => void) {}
 
   async startAsync(): Promise<void> {
